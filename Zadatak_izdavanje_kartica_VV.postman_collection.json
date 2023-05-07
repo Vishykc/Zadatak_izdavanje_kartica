@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "366fd3f5-7a02-4a75-9511-33d94fe1982a",
+		"name": "Zadatak_izdavanje_kartica_VV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addOsoba - Text te oblik CSV-a s delimeterom \",\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Ivan,Ivanic,12345,processing",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/addOsoba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"addOsoba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOsobaByOIB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/getOsobaByOIB?OIB=12345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"getOsobaByOIB"
+					],
+					"query": [
+						{
+							"key": "OIB",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOsobaByOIB",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/deleteOsobaByOIB?OIB=12345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"deleteOsobaByOIB"
+					],
+					"query": [
+						{
+							"key": "OIB",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllOsobe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/getAllOsobe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"getAllOsobe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOsobaById/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/getOsobaById/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"getOsobaById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOsobaById/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/deleteOsobaById/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"deleteOsobaById",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

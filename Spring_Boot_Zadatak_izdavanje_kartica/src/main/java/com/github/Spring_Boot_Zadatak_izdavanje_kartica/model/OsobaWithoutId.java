@@ -1,28 +1,19 @@
 package com.github.Spring_Boot_Zadatak_izdavanje_kartica.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
 import lombok.*;
 
-@Entity
-@Table(name="Osobe")
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
 @ToString
-public class Osoba {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
+public class OsobaWithoutId {
     private String Ime;
 
     private String Prezime;
 
-    @Column(unique = true)
     private Long OIB;
 
     private String Status;
-
 }
